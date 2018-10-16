@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Estilos CSS de la Bolsa de empleo: -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="stylesheet" href="assets/css/multi-select.css" type="text/css"/>
+
+    <title>Egibide - Bolsa de Empleo</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="logo-navbar" src="img/logo_egibide.png" alt="">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="ofertas.html">Ofertas <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="alumnos.html">Alumnos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="perfilDatosPersonales.html">Mi Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="publicar.html">Publicar oferta</a>
+            </li>
+          </ul>
+          <a class="nav-link btn btn-outline-white mr-2" href="#">Publicar oferta</a>
+          <ul class="navbar-nav ml-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="login.html">Cerrar sesión</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main role="main" class="container">
+
+      <h4 class="mt-4 mb-4">Publicar nueva oferta</h4>
+
+      <div class="my-3 p-3 bg-white rounded shadow-sm">
+        <h5 class="border-bottom border-gray pb-2 mb-0">Información de la empresa</h5>
+        <form class="needs-validation mt-4" novalidate="">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="nombreEmpresa">Nombre de la empresa</label>
+                <input class="form-control" id="nombreEmpresa" placeholder="" value="" required="" type="text">
+                <div class="invalid-feedback">
+                  El nombre de la empresa es obligatorio.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="emailEmpresa">Email de la empresa</label>
+                <input class="form-control" id="emailEmpresa" placeholder="" value="" required="" type="email">
+                <div class="invalid-feedback">
+                  El email de la empresa es obligatorio.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="nombreContacto">Persona de contacto</label>
+                <input class="form-control" id="nombreContacto" placeholder="" value="" required="" type="text">
+                <div class="invalid-feedback">
+                  El nombre de la persona de contacto es obligatorio.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="telefonoContacto">Teléfono persona de contacto</label>
+                <input class="form-control" id="telefonoContacto" placeholder="" value="" required="" type="email">
+                <div class="invalid-feedback">
+                  El teléfono de la persona de contacto es obligatorio.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="localidad">Localidad</label>
+                <input class="form-control" id="localidad" placeholder="" value="" required="" type="text">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="direccion">Dirección <span class="text-muted">(Opcional)</span></label>
+                <input class="form-control" id="direccion" placeholder="" value="" required="" type="email">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="country">Idioma</label>
+                <select class="custom-select d-block w-100" id="country" required="">
+                  <option value="">Choose...</option>
+                  <option>United States</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="state">Carnet <span class="text-muted">(Opcional)</span></label>
+                <select class="custom-select d-block w-100" id="state" required="">
+                  <option value="">Choose...</option>
+                  <option>California</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="state">Situación Laboral</label>
+                <select class="custom-select d-block w-100" id="state" required="">
+                  <option value="">Choose...</option>
+                  <option>California</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="fecha">Fecha final</label>
+                <input class="form-control" id="fecha" placeholder="" value="" required="" type="date">
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="username">Descripción de la oferta</label>
+              <textarea class="form-control" id="fecha" placeholder="" value="" required="" rows="5">
+              </textarea>
+            </div>
+
+            <h5 class="border-bottom border-gray pb-2 mb-4 mt-4">Ciclos relacionados</h5>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <h6>Administración y gestión</h6>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="ciclo1" type="checkbox">
+                  <label class="custom-control-label" for="ciclo1">Grado Medio Gestión Administrativa</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="save-info" type="checkbox">
+                  <label class="custom-control-label" for="save-info">Grado Superior Administración y Finanzas</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="save-info" type="checkbox">
+                  <label class="custom-control-label" for="save-info">Grado Superior Asistencia a la Dirección (antes Secretariado)</label>
+                </div>
+              </div>
+
+            
+              <div class="col-md-6 mb-3">
+                <h6>Administración y gestión</h6>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="ciclo1" type="checkbox">
+                  <label class="custom-control-label" for="ciclo1">Grado Medio Gestión Administrativa</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="save-info" type="checkbox">
+                  <label class="custom-control-label" for="save-info">Grado Superior Administración y Finanzas</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="save-info" type="checkbox">
+                  <label class="custom-control-label" for="save-info">Grado Superior Asistencia a la Dirección (antes Secretariado)</label>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <h6>Administración y gestión</h6>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="ciclo1" type="checkbox">
+                  <label class="custom-control-label" for="ciclo1">Grado Medio Gestión Administrativa</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="save-info" type="checkbox">
+                  <label class="custom-control-label" for="save-info">Grado Superior Administración y Finanzas</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="save-info" type="checkbox">
+                  <label class="custom-control-label" for="save-info">Grado Superior Asistencia a la Dirección (antes Secretariado)</label>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <h6>Administración y gestión</h6>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="ciclo1" type="checkbox">
+                  <label class="custom-control-label" for="ciclo1">Grado Medio Gestión Administrativa</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="save-info" type="checkbox">
+                  <label class="custom-control-label" for="save-info">Grado Superior Administración y Finanzas</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="save-info" type="checkbox">
+                  <label class="custom-control-label" for="save-info">Grado Superior Asistencia a la Dirección (antes Secretariado)</label>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <h6>Administración y gestión</h6>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="ciclo1" type="checkbox">
+                  <label class="custom-control-label" for="ciclo1">Grado Medio Gestión Administrativa</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="save-info" type="checkbox">
+                  <label class="custom-control-label" for="save-info">Grado Superior Administración y Finanzas</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="save-info" type="checkbox">
+                  <label class="custom-control-label" for="save-info">Grado Superior Asistencia a la Dirección (antes Secretariado)</label>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <h6>Administración y gestión</h6>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="ciclo1" type="checkbox">
+                  <label class="custom-control-label" for="ciclo1">Grado Medio Gestión Administrativa</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="save-info" type="checkbox">
+                  <label class="custom-control-label" for="save-info">Grado Superior Administración y Finanzas</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="save-info" type="checkbox">
+                  <label class="custom-control-label" for="save-info">Grado Superior Asistencia a la Dirección (antes Secretariado)</label>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <h6>Administración y gestión</h6>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="ciclo1" type="checkbox">
+                  <label class="custom-control-label" for="ciclo1">Grado Medio Gestión Administrativa</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="save-info" type="checkbox">
+                  <label class="custom-control-label" for="save-info">Grado Superior Administración y Finanzas</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" id="save-info" type="checkbox">
+                  <label class="custom-control-label" for="save-info">Grado Superior Asistencia a la Dirección (antes Secretariado)</label>
+                </div>
+              </div>
+            </div>
+            
+            <hr class="mb-4">
+
+            <h4 class="mb-3">Avisar a otros profesores</h4>
+            <div class="mb-3">
+              <select multiple="multiple" id="my-select" name="my-select[]">
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+                <option value='elem_1'>elem 1</option>
+                <option value='elem_2'>elem 2</option>
+                <option value='elem_3'>elem 3</option>
+                <option value='elem_4'>elem 4</option>
+                <option value='elem_100'>elem 100</option>
+              </select>
+            </div>
+
+            <hr class="mb-4">
+
+            <h4 class="mb-3">Avisos</h4>
+            <div class="custom-control custom-checkbox">
+              <input class="custom-control-input" id="same-address" type="checkbox">
+              <label class="custom-control-label" for="same-address">Avisarme por email cuando finalice el plazo.</label>
+            </div>
+            <div class="custom-control custom-checkbox mb-4">
+              <input class="custom-control-input" id="save-info" type="checkbox">
+              <label class="custom-control-label" for="save-info">Avisarme por email a los 20 días para solicitar feedback a empresa.</label>
+            </div>
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Publicar Oferta</button>
+          </form>
+
+
+        
+        <small class="d-block text-right mt-3">
+          <a href="#">All updates</a>
+        </small>
+      </div>
+
+    </main>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Include the plugin's JS: -->
+    <script type="text/javascript" src="assets/js/jquery.multi-select.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('#my-select').multiSelect();
+      });
+  </script>
+  </body>
+</html>
