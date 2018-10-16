@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Iconos Fontawsome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- Estilos CSS de la Bolsa de empleo: -->
+    <link rel="stylesheet" href="styles/style.css">
+
+
+    <title>Egibide - Bolsa de Empleo</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="logo-navbar" src="img/logo_egibide.png" alt="">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="ofertas.html">Ofertas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="alumnos.html">Alumnos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="perfilDatosPersonales.html">Mi Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="publicar.html">Publicar oferta</a>
+            </li>
+          </ul>
+          <a class="nav-link btn btn-outline-white mr-2" href="#">Publicar oferta</a>
+          <ul class="navbar-nav ml-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="login.html">Cerrar sesión</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main role="main" class="container">
+
+      <h4 class="mt-4 mb-2">Mi Perfil</h4>
+      <div class="row">
+        <!-- Menu lateral del perfil -->
+        <div class="col-md-3 my-3 p-0 bg-white rounded shadow-sm menu-lateral">
+          <div class="list-group list-group-flush">
+            <a href="perfilDatosPersonales.html" class="list-group-item list-group-item-action">Datos personales</a>
+            <a href="perfilDatosAcademicos.html" class="list-group-item list-group-item-action active">Datos Académicos</a>
+            <a href="perfilIdiomas.html" class="list-group-item list-group-item-action">Idiomas</a>
+            <a href="perfilDatosInteres.html" class="list-group-item list-group-item-action">Datos de interés</a>
+            <a href="perfilAvisos.html" class="list-group-item list-group-item-action">Avisos y notificaciones</a>
+          </div>
+        </div><!-- Fin: menu lateral perfil -->
+
+        <!-- Contenido principal pagina -->         
+        <div class="col-md-8 ml-3  my-3 p-3 bg-white rounded shadow-sm">
+          <form class="needs-validation" novalidate="">
+            <h5 class="border-bottom border-gray pb-2 mb-4 mt-2">Ciclos cursados en Egibide</h5>
+            <!-- Resumen de ciclos -->
+            <!--
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <table class="table table-hover table-responsive">
+                  <thead>
+                    <tr>
+                      <th>Año Finalización</th>
+                      <th>Ciclo</th>
+                      <th>Tutor</th>
+                      <th>Regimen</th>
+                      <th>Acciones</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2018</td>
+                      <td>Desarrollo de aplicaciones web</td>
+                      <td>Jon Vadillo Romero</td>
+                      <td>Diurno</td>
+                      <td>
+
+                        <button class="btn btn-outline-primary" title="View"><i class="fa fa-sign-in"></i><span class="hidden-xs"> Ver</span></button>
+
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          -->
+            <div>
+              <div class="row">
+                <div class="col-md-9 mb-3">
+                  <label for="nombre">Nombre del ciclo</label>
+                  
+                  <select class="custom-select d-block w-100" id="sexo" required="">
+                    <option selected="" value="null">Selecciona un ciclo</option>
+                    <optgroup label="Administración y Gestión"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="6">
+
+                        Gestión Administrativa</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="18">
+
+                        Administración y Finanzas</option>
+                    <option value="19">
+
+                        Asistencia a la Dirección / Nombre Anterior: Secretariado</option></optgroup><optgroup label="Electricidad y Electrónica"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="7">
+
+                        Instalaciones eléctricas y automáticas / Nombre Anterior: Equipos e Instalaciones Electrotécnicas</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="21">
+
+                        Automatización y Robótica Industrial / Nombre Anterior: Sistemas de Regulación y Control Automáticos</option>
+                    <option value="22">
+
+                        Mantenimiento Electrónico / Nombre Anterior: Desarrollo de Productos Electrónicos</option>
+                    <option value="23">
+
+                        Sistemas Electrotécnicos Automatizados / Nombre Anterior: Instalaciones Electrotécnicas</option>
+                    <option value="24">
+
+                        Sistemas de Telecomunicaciones e Informáticos</option></optgroup><optgroup label="Fabricación Mecánica"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="8">
+
+                        Mecanizado</option>
+                    <option value="9">
+
+                        Soldadura y calderería</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="25">
+
+                        Diseño en Fabricación Mecánica / Nombre Anterior: Desarrollo de Proyectos Mecánicos</option>
+                    <option value="26">
+
+                        Programación de la Producción en Fabricación Mecánica / Nombre Anterior: Producción por Mecanizado</option></optgroup><optgroup label="Hostelería y turismo"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="10">
+
+                        Cocina y Gastronomía / Nombre Anterior: Cocina</option>
+                    <option value="11">
+
+                        Servicios en Restauración / Nombre Anterior: Servicios de Restaurante y Bar</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="27">
+
+                        Dirección de Cocina / Nombre Anterior: Restauración</option></optgroup><optgroup label="Imagen Personal"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="12">
+
+                        Peluquería y cosmética capilar / Nombre Anterior: Peluquería</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="28">
+
+                        Estética integral y bienestar / Nombre Anterior: Estética</option></optgroup><optgroup label="Informática y Comunicaciones"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="13">
+
+                        Sistemas Microinformáticos y Redes / Nombre Anterior: Explotación de Sistemas Informáticos</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="29">
+
+                        Administración de Sistemas Informáticos en Red / Nombre Anterior: Administración de Sistemas Informáticos</option>
+                    <option value="30">
+
+                        Desarrollo de Aplicaciones Multiplataforma / Nombre Anterior: Desarrollo de Aplicaciones Informáticas</option>
+                    <option disabled="" value="31">
+
+                        Desarrollo de Aplicaciones Web</option></optgroup><optgroup label="Instalación y Mantenimiento"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="14">
+
+                        Mantenimiento Electromecánico / Nombre Anterior: Instalación y Mantenimiento Electromecánico de Maquinaria y Conducción de Líneas</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="32">
+
+                        Mecatrónica Industrial / Nombre Anterior: Mantenimiento de Equipo Industrial</option></optgroup><optgroup label="Sanidad"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="15">
+
+                        Cuidados auxiliares de enfermería</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="34">
+
+                        Laboratorio de diagnóstico clínico</option>
+                    <option value="35">
+
+                        Ortoprótesis y Productos de Apoyo / Nombre Anterior: Ortoprotésica</option></optgroup><optgroup label="Servicios socioculturales y a la Comunidad"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="16">
+
+                        Atención a Personas en Situación de Dependencia / Nombre Anterior: Atención Sociosanitaria</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="37">
+
+                        Integración Social</option></optgroup><optgroup label="Transporte y mantenimiento de vehículos"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="17">
+
+                        Electromecánica de Vehículos Automóviles / Nombre Anterior: Electromecánica de Vehículos</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="38">
+
+                        Automoción</option></optgroup><optgroup label="Comercio y Marketing"></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="20">
+
+                        Marketing y Publicidad</option></optgroup><optgroup label="Química"></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="33">
+
+                        Laboratorio de Análisis y Control de Calidad / Nombre Anterior: Análisis y Control</option></optgroup><optgroup label="Seguridad y Medio Ambiente"></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="36">
+
+                        Educación y Control Ambiental</option></optgroup><optgroup label="PCPI-FP Básica">
+                    <option value="1">
+
+                        Operario-a de instalaciones eléctricas</option>
+                    <option value="2">
+
+                        Operario-a de mecanizado</option>
+                    <option value="3">
+
+                        Operario-a de pastelería y panadería</option>
+                    <option value="4">
+
+                        Auxiliar de comercio y almacén</option>
+                    <option value="5">
+
+                        Operario-a de carpintería y montajes de construcciones metálicas</option></optgroup>                                
+                  </select>
+
+                  <div class="invalid-feedback">
+                    El nombre de la empresa es obligatorio.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="finalizacion">Año de finalización</label>
+                  <input class="form-control" id="finalizacion" placeholder="" value="" required="" type="text">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 mb-3">
+                  <label for="nombreContacto">Tutor</label>
+                  <input class="form-control" id="nombreContacto" placeholder="" value="" required="" type="text">
+                  <div class="invalid-feedback">
+                    El nombre de la persona de contacto es obligatorio.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="email-egibide">Modelo</span></label>
+                  <select class="custom-select d-block w-100" id="regimen" required="">
+                    <option value="">Elije...</option>
+                    <option>A (Castellano)</option>
+                    <option>B (Euskera y Castellano)</option>
+                    <option>D (Euskera)</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    El teléfono de la persona de contacto es obligatorio.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="regimen">Régimen</span></label>
+                  <select class="custom-select d-block w-100" id="regimen" required="">
+                    <option value="">Elije...</option>
+                    <option>Diurno</option>
+                    <option>Nocturno</option>
+                  </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="finalizacion">&nbsp;</label>
+                  <button class="btn btn-primary w-100">Añadir</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-none border-bottom border-gray pb-2 mb-4 mt-4">
+              <div class="row">
+                <div class="col-md-9 mb-3">
+                  <label for="nombre">Nombre del ciclo</label>
+                  
+                  <select class="custom-select d-block w-100" id="sexo" required="">
+                    <option selected="" value="null">Selecciona un ciclo</option>
+                    <optgroup label="Administración y Gestión"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="6">
+
+                        Gestión Administrativa</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="18">
+
+                        Administración y Finanzas</option>
+                    <option value="19">
+
+                        Asistencia a la Dirección / Nombre Anterior: Secretariado</option></optgroup><optgroup label="Electricidad y Electrónica"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="7">
+
+                        Instalaciones eléctricas y automáticas / Nombre Anterior: Equipos e Instalaciones Electrotécnicas</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="21">
+
+                        Automatización y Robótica Industrial / Nombre Anterior: Sistemas de Regulación y Control Automáticos</option>
+                    <option value="22">
+
+                        Mantenimiento Electrónico / Nombre Anterior: Desarrollo de Productos Electrónicos</option>
+                    <option value="23">
+
+                        Sistemas Electrotécnicos Automatizados / Nombre Anterior: Instalaciones Electrotécnicas</option>
+                    <option value="24">
+
+                        Sistemas de Telecomunicaciones e Informáticos</option></optgroup><optgroup label="Fabricación Mecánica"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="8">
+
+                        Mecanizado</option>
+                    <option value="9">
+
+                        Soldadura y calderería</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="25">
+
+                        Diseño en Fabricación Mecánica / Nombre Anterior: Desarrollo de Proyectos Mecánicos</option>
+                    <option value="26">
+
+                        Programación de la Producción en Fabricación Mecánica / Nombre Anterior: Producción por Mecanizado</option></optgroup><optgroup label="Hostelería y turismo"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="10">
+
+                        Cocina y Gastronomía / Nombre Anterior: Cocina</option>
+                    <option value="11">
+
+                        Servicios en Restauración / Nombre Anterior: Servicios de Restaurante y Bar</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="27">
+
+                        Dirección de Cocina / Nombre Anterior: Restauración</option></optgroup><optgroup label="Imagen Personal"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="12">
+
+                        Peluquería y cosmética capilar / Nombre Anterior: Peluquería</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="28">
+
+                        Estética integral y bienestar / Nombre Anterior: Estética</option></optgroup><optgroup label="Informática y Comunicaciones"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="13">
+
+                        Sistemas Microinformáticos y Redes / Nombre Anterior: Explotación de Sistemas Informáticos</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="29">
+
+                        Administración de Sistemas Informáticos en Red / Nombre Anterior: Administración de Sistemas Informáticos</option>
+                    <option value="30">
+
+                        Desarrollo de Aplicaciones Multiplataforma / Nombre Anterior: Desarrollo de Aplicaciones Informáticas</option>
+                    <option disabled="" value="31">
+
+                        Desarrollo de Aplicaciones Web</option></optgroup><optgroup label="Instalación y Mantenimiento"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="14">
+
+                        Mantenimiento Electromecánico / Nombre Anterior: Instalación y Mantenimiento Electromecánico de Maquinaria y Conducción de Líneas</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="32">
+
+                        Mecatrónica Industrial / Nombre Anterior: Mantenimiento de Equipo Industrial</option></optgroup><optgroup label="Sanidad"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="15">
+
+                        Cuidados auxiliares de enfermería</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="34">
+
+                        Laboratorio de diagnóstico clínico</option>
+                    <option value="35">
+
+                        Ortoprótesis y Productos de Apoyo / Nombre Anterior: Ortoprotésica</option></optgroup><optgroup label="Servicios socioculturales y a la Comunidad"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="16">
+
+                        Atención a Personas en Situación de Dependencia / Nombre Anterior: Atención Sociosanitaria</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="37">
+
+                        Integración Social</option></optgroup><optgroup label="Transporte y mantenimiento de vehículos"></optgroup><optgroup class="" label="CFGMedio">
+                    <option value="17">
+
+                        Electromecánica de Vehículos Automóviles / Nombre Anterior: Electromecánica de Vehículos</option></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="38">
+
+                        Automoción</option></optgroup><optgroup label="Comercio y Marketing"></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="20">
+
+                        Marketing y Publicidad</option></optgroup><optgroup label="Química"></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="33">
+
+                        Laboratorio de Análisis y Control de Calidad / Nombre Anterior: Análisis y Control</option></optgroup><optgroup label="Seguridad y Medio Ambiente"></optgroup><optgroup class="" label="CFGSuperior">
+                    <option value="36">
+
+                        Educación y Control Ambiental</option></optgroup><optgroup label="PCPI-FP Básica">
+                    <option value="1" selected>
+
+                        Operario-a de instalaciones eléctricas</option>
+                    <option value="2">
+
+                        Operario-a de mecanizado</option>
+                    <option value="3">
+
+                        Operario-a de pastelería y panadería</option>
+                    <option value="4">
+
+                        Auxiliar de comercio y almacén</option>
+                    <option value="5">
+
+                        Operario-a de carpintería y montajes de construcciones metálicas</option></optgroup>                                
+                  </select>
+
+                  <div class="invalid-feedback">
+                    El nombre de la empresa es obligatorio.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="finalizacion">Año de finalización</label>
+                  <input class="form-control" id="finalizacion" placeholder="" value="2017" required="" type="text">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 mb-3">
+                  <label for="nombreContacto">Tutor</label>
+                  <input class="form-control" id="nombreContacto" placeholder="" value="Jon Vadillo Romero" required="" type="text">
+                  <div class="invalid-feedback">
+                    El nombre de la persona de contacto es obligatorio.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="email-egibide">Modelo</span></label>
+                  <select class="custom-select d-block w-100" id="regimen" required="">
+                    <option value="">Elije...</option>
+                    <option value="A" selected="">A (Castellano)</option>
+                    <option value="B">B (Euskera y Castellano)</option>
+                    <option value="D">D (Euskera)</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    El teléfono de la persona de contacto es obligatorio.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="regimen">Régimen</span></label>
+                  <select class="custom-select d-block w-100" id="regimen" required="">
+                    <option value="">Elije...</option>
+                    <option value="diurno" selected>Diurno</option>
+                    <option value="nocturno">Nocturno</option>
+                  </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="finalizacion">&nbsp;</label>
+                  <button class="btn btn-primary w-100">Añadir</button>
+                </div>
+              </div>
+            </div>
+
+
+
+            <h5 class="border-bottom border-gray pb-2 mb-4 mt-4">Otros estudios</h5>
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <label for="nombre">Nivel de estudios</label>
+                
+                <select class="custom-select d-block w-100" id="sexo" required="">
+                  <option value="">Elije...</option>
+                  <option>Doctorado</option>
+                  <option>Licenciatura</option>
+                  <option>Grado</option>
+                  <option>FP Grado Superior</option>
+                  <option>FP Grado Medio</option>
+                  <option>FB Básica</option>  
+                </select>
+
+                <div class="invalid-feedback">
+                  El nombre de la empresa es obligatorio.
+                </div>
+              </div>
+              <div class="col-md-8 mb-3">
+                <label for="finalizacion">Nombre del título</label>
+                <input class="form-control" id="finalizacion" placeholder="" value="" required="" type="text">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="nombre">Familia Profesional</label>
+                
+                <select class="custom-select d-block w-100" id="sexo" required="">
+                  <option value="">Elije...</option>
+                  <option>Doctorado</option>
+                  <option>Licenciatura</option>
+                  <option>Grado</option>
+                  <option>FP Grado Superior</option>
+                  <option>FP Grado Medio</option>
+                  <option>FB Básica</option>  
+                </select>
+
+                <div class="invalid-feedback">
+                  El nombre de la empresa es obligatorio.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="nombreContacto">Centro</label>
+                <input class="form-control" id="nombreContacto" placeholder="" value="" required="" type="text">
+                <div class="invalid-feedback">
+                  El nombre de la persona de contacto es obligatorio.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="nombreContacto">Año de Finalización</label>
+                <input class="form-control" id="nombreContacto" placeholder="" value="" required="" type="text">
+                <div class="invalid-feedback">
+                  El nombre de la persona de contacto es obligatorio.
+                </div>
+              </div>
+              
+              <div class="col-md-3 mb-3">
+                <label for="finalizacion">&nbsp;</label>
+                <button class="btn btn-primary w-100">Añadir</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+      </div>
+      
+
+    </main>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>

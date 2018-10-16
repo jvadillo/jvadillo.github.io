@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Iconos Fontawsome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- Estilos CSS de la Bolsa de empleo: -->
+    <link rel="stylesheet" href="styles/style.css">
+
+
+    <title>Egibide - Bolsa de Empleo</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="logo-navbar" src="img/logo_egibide.png" alt="">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="ofertas.html">Ofertas</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="alumnos.html">Alumnos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="perfilDatosPersonales.html">Mi Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="publicar.html">Publicar oferta</a>
+            </li>
+          </ul>
+          <a class="nav-link btn btn-outline-white mr-2" href="#">Publicar oferta</a>
+          <ul class="navbar-nav ml-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="login.html">Cerrar sesión</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar secundario -->
+    <div class="nav-scroller bg-white shadow-sm">
+      <div class="container">
+        <nav class="nav nav-underline">
+          <a class="nav-link" href="detalleOferta.html">Detalles</a>
+          <a class="nav-link active" href="detalleOfertaCandidatos.html">
+            Candidatos
+            <span class="badge badge-pill bg-light align-text-bottom">27</span>
+          </a>
+          <a class="nav-link" href="detalleOfertaNotificaciones.html">Notificaciones</a>
+        </nav>
+      </div>
+    </div>
+
+    <main role="main" class="container">
+
+      <h4 class="mt-4 mb-4">
+        Candidatos
+        <a class="btn btn-outline-primary pull-right" href="#"><i class="fa fa-download"></i> Descarga CVs</a>
+        <a class="btn btn-outline-primary pull-right mr-2" href="#"><i class="fa fa-plus"></i> Añadir Candidato</a>
+        
+      </h4>
+      <div class="my-3 p-3 bg-white rounded shadow-sm">
+        
+
+        <form class="form-inline">
+          <label class="sr-only" for="inlineFormInputName2">Nobmre y apellidos</label>
+            <input type="text" class="form-control mb-2 mr-sm-2 col-md-3" id="inlineFormInputName2" placeholder="p.ej.: Alain Mendieta Rivera">
+          <label class="sr-only" for="inlineFormInputName2">Tipo de ofertas</label>
+          <select class="custom-select mb-2 mr-sm-2" id="state" required="">
+            <option value="">Sólo titulados</option>
+            <option>Todos</option>
+          </select>
+          <label class="sr-only" for="inlineFormInputName2">Sólo de Egibide</label>
+          <select class="custom-select mb-2 mr-sm-2" id="state" required="">
+            <option value="">Sólo de Egibide</option>
+            <option>Todos</option>
+          </select>
+          <label class="sr-only" for="inlineFormInputName2">Ciclos</label>
+          <select class="custom-select mb-2 mr-sm-2" id="state" required="">
+            <option value="">Todos los ciclos</option>
+            <option>Administración y Gestión</option>
+            <option>Electricidad y Electrónica</option>
+            <option>Fabricación mecánica</option>
+            <option>Hostelería y turismo</option>
+            <option>Imagen personal</option>
+            <option>Informática y comunicaciones</option>
+            <option>Instalación y mantenimiento</option>
+            <option>Sanidad</option>
+            <option>Servicios socioculturales y a la comunidad</option>
+            <option>Transporte y mantenimiento de vehículos</option>
+            <option>Administración y Gestión</option>
+            <option>Química</option>
+            <option>Comercio y Marqueting</option>
+            <option>Seguridad y Medio Ambiente</option>
+            <option>FP Básica</option>
+          </select>
+          
+
+          <button type="submit" class="btn btn-primary mb-2"><i class="fa fa-filter"></i> Filtrar</button>
+        </form>
+
+        
+        
+      </div>
+      <div class="my-3 p-3 bg-white rounded shadow-sm">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Foto</th>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th>Teléfono</th>
+              <th>Situación</th>
+              <th>Interés</th>
+              <th>Detalles</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="img/no-user.png" width="50px" height="50px"></td>
+              <td>Jon Vadillo Romero</td>
+              <td>vadillo.jon@gmail.com</td>
+              <td>945010101<br>656123456</td>
+              <td><span class="badge badge-secondary">trabajando</span></td>
+              <td><span class="badge badge-success">SI</span></td>
+              <td>
+                <button class="btn btn-outline-primary" title="View"><i class="fa fa-sign-in"></i><span class="hidden-xs"> Ver</span></button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="img/no-user.png" width="50px" height="50px"></td>
+              <td>Jon Vadillo Romero</td>
+              <td>vadillo.jon@gmail.com</td>
+              <td>945010101<br/>656123456</td>
+              <td><span class="badge badge-info">estudiando</span></td>
+              <td><span class="badge badge-success">SI</span></td>
+              <td>
+                <button class="btn btn-outline-primary" title="View"><i class="fa fa-sign-in"></i><span class="hidden-xs"> Ver</span></button>
+              </td>
+            </tr>
+            
+            <tr>
+              <td><img src="img/no-user.png" width="50px" height="50px"></td>
+              <td>Jon Vadillo Romero</td>
+              <td>vadillo.jon@gmail.com</td>
+              <td>945010101<br>656123456</td>
+              <td><span class="badge badge-info">estudiando</span></td>
+              <td><span class="badge badge-secondary">NO</span></td>
+              <td>
+                <button class="btn btn-outline-primary" title="View"><i class="fa fa-sign-in"></i><span class="hidden-xs"> Ver</span></button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="img/no-user.png" width="50px" height="50px"></td>
+              <td>Jon Vadillo Romero</td>
+              <td>vadillo.jon@gmail.com</td>
+              <td>945010101<br/>656123456</td>
+              <td><span class="badge badge-dark">en paro</span></td>
+              <td><span class="badge badge-light">N.C.</span></td>
+              <td>
+                <button class="btn btn-outline-primary" title="View"><i class="fa fa-sign-in"></i><span class="hidden-xs"> Ver</span></button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="img/no-user.png" width="50px" height="50px"></td>
+              <td>Jon Vadillo Romero</td>
+              <td>vadillo.jon@gmail.com</td>
+              <td>945010101<br>656123456</td>
+              <td><span class="badge badge-secondary">trabajando</span></td>
+              <td><span class="badge badge-success">SI</span></td>
+              <td>
+                <button class="btn btn-outline-primary" title="View"><i class="fa fa-sign-in"></i><span class="hidden-xs"> Ver</span></button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="img/no-user.png" width="50px" height="50px"></td>
+              <td>Jon Vadillo Romero</td>
+              <td>vadillo.jon@gmail.com</td>
+              <td>945010101<br/>656123456</td>
+              <td><span class="badge badge-info">estudiando</span></td>
+              <td><span class="badge badge-light">N.C.</span></td>
+              <td>
+                <button class="btn btn-outline-primary" title="View"><i class="fa fa-sign-in"></i><span class="hidden-xs"> Ver</span></button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="img/no-user.png" width="50px" height="50px"></td>
+              <td>Jon Vadillo Romero</td>
+              <td>vadillo.jon@gmail.com</td>
+              <td>945010101<br>656123456</td>
+              <td><span class="badge badge-secondary">trabajando</span></td>
+              <td><span class="badge badge-light">N.C.</span></td>
+              <td>
+                <button class="btn btn-outline-primary" title="View"><i class="fa fa-sign-in"></i><span class="hidden-xs"> Ver</span></button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="img/no-user.png" width="50px" height="50px"></td>
+              <td>Jon Vadillo Romero</td>
+              <td>vadillo.jon@gmail.com</td>
+              <td>945010101<br/>656123456</td>
+              <td><span class="badge badge-dark">en paro</span></td>
+              <td><span class="badge badge-light">N.C.</span></td>
+              <td>
+                <button class="btn btn-outline-primary" title="View"><i class="fa fa-sign-in"></i><span class="hidden-xs"> Ver</span></button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="img/no-user.png" width="50px" height="50px"></td>
+              <td>Jon Vadillo Romero</td>
+              <td>vadillo.jon@gmail.com</td>
+              <td>945010101<br>656123456</td>
+              <td><span class="badge badge-info">estudiando</span></td>
+              <td><span class="badge badge-light">N.C.</span></td>
+              <td>
+                <button class="btn btn-outline-primary" title="View"><i class="fa fa-sign-in"></i><span class="hidden-xs"> Ver</span></button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="img/no-user.png" width="50px" height="50px"></td>
+              <td>Jon Vadillo Romero</td>
+              <td>vadillo.jon@gmail.com</td>
+              <td>945010101<br/>656123456</td>
+              <td><span class="badge badge-dark">en paro</span></td>
+              <td><span class="badge badge-light">N.C.</span></td>
+              <td>
+                <button class="btn btn-outline-primary" title="View"><i class="fa fa-sign-in"></i><span class="hidden-xs"> Ver</span></button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="img/no-user.png" width="50px" height="50px"></td>
+              <td>Jon Vadillo Romero</td>
+              <td>vadillo.jon@gmail.com</td>
+              <td>945010101<br>656123456</td>
+              <td><span class="badge badge-secondary">trabajando</span></td>
+              <td><span class="badge badge-light">N.C.</span></td>
+              <td>
+                <button class="btn btn-outline-primary" title="View"><i class="fa fa-sign-in"></i><span class="hidden-xs"> Ver</span></button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="img/no-user.png" width="50px" height="50px"></td>
+              <td>Jon Vadillo Romero</td>
+              <td>vadillo.jon@gmail.com</td>
+              <td>945010101<br/>656123456</td>
+              <td><span class="badge badge-info">estudiando</span></td>
+              <td><span class="badge badge-light">N.C.</span></td>
+              <td>
+                <button class="btn btn-outline-primary" title="View"><i class="fa fa-sign-in"></i><span class="hidden-xs"> Ver</span></button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="img/no-user.png" width="50px" height="50px"></td>
+              <td>Jon Vadillo Romero</td>
+              <td>vadillo.jon@gmail.com</td>
+              <td>945010101<br>656123456</td>
+              <td><span class="badge badge-secondary">trabajando</span></td>
+              <td><span class="badge badge-light">N.C.</span></td>
+              <td>
+                <button class="btn btn-outline-primary" title="View"><i class="fa fa-sign-in"></i><span class="hidden-xs"> Ver</span></button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="img/no-user.png" width="50px" height="50px"></td>
+              <td>Jon Vadillo Romero</td>
+              <td>vadillo.jon@gmail.com</td>
+              <td>945010101<br/>656123456</td>
+              <td><span class="badge badge-info">estudiando</span></td>
+              <td><span class="badge badge-light">N.C.</span></td>
+              <td>
+                <button class="btn btn-outline-primary" title="View"><i class="fa fa-sign-in"></i><span class="hidden-xs"> Ver</span></button>
+              </td>
+            </tr>
+          </tbody>
+
+      </div>
+
+    </main>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
